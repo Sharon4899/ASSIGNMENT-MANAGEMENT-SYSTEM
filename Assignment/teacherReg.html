@@ -1,0 +1,101 @@
+<Html>  
+<head>   
+<title>  
+Registration Page  
+</title>
+<style>
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: #D6D6D6;  
+}  
+button {   
+       background: linear-gradient(to bottom,#D6D6D6 0% , #000 100%);  
+       width: 100%;  
+
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: white;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #ABD;   
+    }   
+ input[type=email], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px #ABD234;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 1;
+        margin: 10px 5px; 
+        color:none;
+    }  
+    button{
+    font-size: 20px
+    border:2px solid #342;
+    }
+  
+</style>   
+</head>  
+<body bgcolor="#98FB98">  
+<br>  
+<br>  
+<form action="/Assignment/teacherreg.php" method="post"> 
+  
+<label> FirstName </label>         
+<input type="text" name="firstname" size="15"/> <br> <br>  
+
+<label> LastName: </label>         
+<input type="text" name="lastname" size="15"/> <br> <br>  
+  
+<label>   
+Department :  
+</label>   
+<select name="dep">  
+<option value="Computer">Computer</option>  
+<option value="IT">IT</option>  
+<option value="Mechanical">Mechanical</option>  
+<option value="E&TC">E&TC</option>  
+<option value="Electrical">Electrical</option> 
+<option value="Civil">Civil</option>  
+</select>  
+  <label>   
+<br>
+
+ <br>  
+ Subject :  
+</label>   
+<select name="sub">  
+<option value="DBMS">DBMS</option>  
+<option value="CN">CN</option>  
+<option value="TOC">TOC</option>  
+<option value="ISEE">ISEE</option>  
+<option value="SEPM">SEPM</option> 
+<option value="SDL">SDL</option>  
+</select>  
+  <label>   
+<br>
+
+ <br>  
+  
+<label>   
+College ID :  
+</label>  
+<input type="text" name="id"/>   
+<br> <br>  
+ <br>  
+Email:  
+<input type="email"  name="email"/> <br>    
+<br> <br>  
+Password:  
+<input type="Password" id="pass" name="pass"> <br>   
+<br> <br>  
+Re-type password:  
+<input type="Password" id="repass" name="repass"> <br> <br>  
+<center> <input type="submit"  name="submit"/> </center>  
+</form> 
+</body>  
+</html>  
